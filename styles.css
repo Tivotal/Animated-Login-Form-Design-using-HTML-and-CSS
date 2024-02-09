@@ -1,0 +1,87 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #34495e;
+}
+
+.form {
+  width: 400px;
+  background: #191919;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.form h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form h2::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 50px;
+  background: #2ecc71;
+  border-radius: 10px;
+  bottom: 0;
+}
+
+.form input[type="text"],
+.form input[type="password"] {
+  display: block;
+  margin: 20px auto;
+  width: 240px;
+  text-align: center;
+  background: none;
+  color: #fff;
+  border: 2px solid #3498db;
+  outline: none;
+  padding: 14px 10px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.form input[type="text"] {
+  margin-top: 40px;
+}
+
+.form input[type="text"]:focus,
+.form input[type="password"]:focus {
+  width: 300px;
+  border-color: #2ecc71;
+}
+
+.form input[type="submit"] {
+  display: block;
+  margin: 20px auto;
+  background: none;
+  border: 2px solid #2ecc71;
+  padding: 10px 50px;
+  color: #fff;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form input[type="submit"]:hover {
+  background: #2ecc71;
+}
